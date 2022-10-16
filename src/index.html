@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into section dropdown navigation</title>
+    <link rel="icon" href="../Media/images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="../library/jQuery/jquery-v3.6.1.js"></script>
+</head>
+
+<body>
+    <!-- TODO: HEADER -->
+    <header id="header">
+        <div class="header">
+            <div class="header__logo">
+                <img src="../Media/images/logo.svg" alt="Snap">
+            </div>
+
+            <nav class="header__navbar">
+                <ul class="header__navbar__lists">
+                    <li class="lists__feature">
+                        <a class="navbarItem" href="#">Features</a>
+                        <img src="../Media/images/icon-arrow-down.svg" alt="">
+                        <ul class="navbarItem__extend">
+                            <li>
+                                <a class="navbarItem__extend__child" href="#">
+                                    <img src="../Media/images/icon-todo.svg" alt="">
+                                    Todo List
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navbarItem__extend__child" href="#">
+                                    <img src="../Media/images/icon-calendar.svg" alt="">
+                                    Calendar
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navbarItem__extend__child" href="#">
+                                    <img src="../Media/images/icon-reminders.svg" alt="">
+                                    Reminders
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navbarItem__extend__child" href="#">
+                                    <img src="../Media/images/icon-planning.svg" alt="">
+                                    Planning
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbarItem" href="#">Company</a>
+                        <img src="../Media/images/icon-arrow-down.svg" alt="">
+
+                        <ul class="navbarItem__extend">
+                            <li>
+                                <a class="navbarItem__extend__child" href="#">History</a>
+                            </li>
+                            <li>
+                                <a class="navbarItem__extend__child" href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a class="navbarItem__extend__child" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbarItem" href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a class="navbarItem" href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__login">
+                <ul class="header__login__lists">
+                    <li>
+                        <a class="navbarItem" href="#">Login</a>
+                    </li>
+                    <li class="lists__register">
+                        <a class="navbarItem" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__menu">
+                <i class="header__menu__icon fa-solid fa-bars"></i>
+            </div>
+
+            <div class="header__modal">
+                <i class="modal__close fa-solid fa-xmark"></i>
+
+                <nav class="modal__navbar">
+                    <ul class="modal__navbar__lists">
+                        <li class="lists__feature">
+                            <a class="navbarItem" href="#">Features</a>
+                            <img src="../Media/images/icon-arrow-down.svg" alt="">
+                            <ul class="navbarItem__extend">
+                                <li>
+                                    <a class="navbarItem__extend__child" href="#">
+                                        <img src="../Media/images/icon-todo.svg" alt="">
+                                        Todo List
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbarItem__extend__child" href="#">
+                                        <img src="../Media/images/icon-calendar.svg" alt="">
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbarItem__extend__child" href="#">
+                                        <img src="../Media/images/icon-reminders.svg" alt="">
+                                        Reminders
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbarItem__extend__child" href="#">
+                                        <img src="../Media/images/icon-planning.svg" alt="">
+                                        Planning
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbarItem" href="#">Company</a>
+                            <img src="../Media/images/icon-arrow-down.svg" alt="">
+
+                            <ul class="navbarItem__extend">
+                                <li>
+                                    <a class="navbarItem__extend__child" href="#">History</a>
+                                </li>
+                                <li>
+                                    <a class="navbarItem__extend__child" href="#">Our Team</a>
+                                </li>
+                                <li>
+                                    <a class="navbarItem__extend__child" href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbarItem" href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a class="navbarItem" href="#">About</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="modal__login">
+                    <ul class="modal__login__lists">
+                        <li>
+                            <a class="modal__navbarItem" href="#">Login</a>
+                        </li>
+                        <li class="modal__lists__register">
+                            <a class="modal__navbarItem" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="section__info">
+            <h1 class="section__info__title">Make remote work</h1>
+
+            <p class="section__info__content">
+                Get your team in sync, master your location.
+                Streamline processes, create team retuals,
+                and watch productivity soar.
+            </p>
+
+            <button class="section__info__btn">Learn more</button>
+
+            <div class="section__info__company">
+                <img src="../Media/images/client-databiz.svg" alt="">
+                <img class="company__audip" src="../Media/images/client-audiophile.svg" alt="">
+                <img src="../Media/images/client-meet.svg" alt="">
+                <img src="../Media/images/client-maker.svg" alt="">
+            </div>
+        </div>
+
+        <div class="section__bg">
+            <img src="../Media/images/image-hero-desktop.png" alt="">
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
